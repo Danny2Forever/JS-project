@@ -1,0 +1,258 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+:root {
+  background: -webkit-linear-gradient(top, #222838 0%, #131621 100%);
+  height: 100vh;
+}
+
+.container {
+  width: 334px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body
+{
+  background:#333;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #24E2B8;
+}
+
+.one, .two, .three, .four, .five {
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  overflow: hidden;
+  padding: 20px 50px 20px 70px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: background-position .7s,box-shadow .4s;
+  transition: background-position .7s,box-shadow .4s;
+  background-size: 110%;
+  font-family: 'Oswald', sans-serif;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+  background-position: 0% 30%;
+}
+.one:hover:after, .two:hover:after, .three:hover:after, .four:hover:after, .five:hover:after {
+  right: -40px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before, .one:after, .two:after, .three:after, .four:after, .five:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 30px;
+  left: 25px;
+  top: 19px;
+}
+.one:after, .two:after, .three:after, .four:after, .five:after {
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -100px;
+  top: 10px;
+}
+
+.one {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #9e1919;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9e1919), to(rgba(97, 23, 23, 0.51))), url("https://i.pinimg.com/originals/14/8c/be/148cbeeb8774490749799ae962d1daba.jpg");
+  background-image: linear-gradient(to bottom, #9e1919, (rgba(97, 23, 23, 0.51))), url("https://i.pinimg.com/originals/14/8c/be/148cbeeb8774490749799ae962d1daba.jpg");
+}
+.one:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #9e1919;
+}
+.one:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.one:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.one:after, .one:before {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/871/871366.png);
+    background-size: 40px 40px; 
+    margin-top: -3px; 
+    margin-left: -5px;
+    width: 40px; 
+    height: 40px;
+    content: "";
+}
+.one b {
+  color: #df1203;
+  font-weight: 700;
+}
+
+.two {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #1ad629;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1ad629,), to(rgba(21, 70, 21, 0.24))), url("http://www.eatweartravel.com/wp-content/uploads/2015/04/i-love-shopping_1920x1200_83206.jpg");
+  background-image: linear-gradient(to bottom, #16851f, rgba(34, 94, 19, 0.24)), url("https://external-preview.redd.it/AWDeeEILc7BmpD6EmjJv-GCrFy5NJNYkkbqoo5m7lBU.png?width=640&crop=smart&auto=webp&s=21e0830765d3be8c19dc4120049db23354475a57");
+}
+.two:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #1ad629;
+}
+.two:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(20);
+    margin-top: 3px; 
+    margin-right: 10px;
+}
+.two:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+          
+}
+.two:after, .two:before {
+    background-image: url(https://d24vh1v7onoh2a.cloudfront.net/images/events/2020/aegis_gold_450.png);
+    background-size: 50px 50px; 
+    margin-top: -8px; 
+    margin-left: -10px;
+    width: 50px; 
+    height: 50px;
+    content: "";
+}
+.two b {
+  color: #FFD9B4;
+  font-weight: 700;
+}
+
+.three {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.18))), url("https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360");
+  background-image: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0.18)), url("https://www.datasciencecentral.com/wp-content/uploads/2022/06/AdobeStock_297078136.jpg");
+}
+.three:hover {
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16) inset, 0px 0px 30px 0px #000000;
+  
+}
+
+.three:hover:after {
+    -webkit-transform: scale(0);
+            transform: scale(20);
+    margin-top: 1px;
+    margin-right: 15px;
+
+}
+.three:hover:before {
+  -webkit-transform: scale(1);
+          transform: scale(1.2);
+    
+}
+.three:after, .three:before {
+    background-image: url(https://camo.githubusercontent.com/ce7d984a9a92f8f610e17795df90bad1fc2ac27f42078bd26db5f67395fbf62a/68747470733a2f2f637369732e706163652e6564752f7e736368617266662f706163656d6f62696c656c61622f696d616765732f6769746875622e6a7067);
+    background-size: 50px 50px; 
+    margin-left: -10px;
+    margin-top: -8px;
+    width: 50px;     
+    height: 50px;
+    content: "";
+}
+.three b {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  
+}
+
+.four {
+  box-shadow: 0px 0px 0px 2px rgba(173, 155, 155, 0.16) inset, 0px 0px 10px 0px #33E7EA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#33E7EA), to(rgba(161, 245, 245, 0.24))), url("https://cdn2.itpro.co.uk/sites/itpro/files/server_room.jpg");
+  background-image: linear-gradient(to bottom, #33E7EA, rgba(161, 245, 245, 0.24)), url("https://cdn2.itpro.co.uk/sites/itpro/files/server_room.jpg");
+}
+.four:hover {
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.16) inset, 0px 0px 30px 0px #33E7EA;
+}
+.four:hover:after {
+  -webkit-transform: rotate(3000deg);
+          transform: rotate(3000deg);
+    margin-right: 15px;
+    margin-top: 0px;
+    width: 50px;     
+    height: 50px;
+}
+.four:hover:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(180deg);
+}
+
+.four:after, .four:before {
+    background-image: url(https://www.freeiconspng.com/thumbs/settings-icon/settings-icon-16.png);
+    background-size: 50px 50px; 
+    margin-left: -10px;
+    margin-top: -8px;
+    width: 50px;     
+    height: 50px;
+    content: "";
+}
+
+.four b {
+  color: #1CF4FF;
+  font-weight: 700;
+}
+
+.five {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #DE3964;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DE3964), to(rgba(154, 40, 87, 0.24))), url("http://nightlifeassociates.com/wp-content/uploads/2014/03/hakkasan-nightclub_tiesto-smalls.jpg");
+  background-image: linear-gradient(to bottom, #DE3964, rgba(154, 40, 87, 0.24)), url("http://nightlifeassociates.com/wp-content/uploads/2014/03/hakkasan-nightclub_tiesto-smalls.jpg");
+}
+.five:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #DE3964;
+}
+.five:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.five:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.five:after, .five:before {
+    content: "⭐️";
+}
+.five b {
+  color: #F764FF;
+  font-weight: 700;
+  
+}
+
+.back {
+    background: #000000;
+    height: 100%;
+}
